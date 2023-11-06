@@ -160,5 +160,22 @@ fieldset{
 }
 
 footer{
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    background-color: #535971;
+    border-radius: 0 0 20px 20px;
+}
+
+footer .button{
+    background-color: #FF5374;
+    width: 610px;
+    height: 56px;
+    border-radius: 20px;
+    border: 0;
+    font-family: 'Staatliches', sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFF;
 }
