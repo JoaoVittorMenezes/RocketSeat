@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>avalie a sua mentoria</h1>
+            <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+        </header>
+        <img src="images/img1 (1).svg" alt="logo">
+        <form id="form">
+            <div class="title-header">
+                <h1>Informações pessoais</h1>
+            </div>
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <div class="wrapper-line">
+                        <div class="wrapper-line-div-section">
+                            <section>
+                                <label for="event-name">Nome</label>
+                                <input type="text" required>
+                            </section>
+                            <section>
+                                <label for="event-surname">Sobrenome</label>
+                                <input type="text" required>
+                            </section>
+                        </div>
+                        <section class="wrapper-line-section">
+                            <label for="event-email">Email</label>
+                            <input type="email" required>
+                        </section>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <div class="wrapper-line">
+                        <legend>informações do mentor</legend>
+                        <div class="line"></div>
+                        <div class="wrapper-line-select">
+                            <label for="event-mentor">Selecione quem foi o seu mentor</label>
+                            <select name="" id="event-mentor">
+                                <option value=""></option>
+                                <option value="name">Lucas</option>
+                                <option value="name">João</option>
+                                <option value="name">Kauã</option>
+                                <option value="name">Silas</option>
+                                <option value="name">Marcelo</option>
+                                <option value="name">Luíz</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="wrapper-line">
+                        <label for="event-textarea">Feedback sobre o mentor</label>
+                        <textarea id="event-textarea"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="div-checkbox-wrapper">
+                    <div class="bloco" ><input type="checkbox" id="event-checkbox"></div>
+                    <label for="event-checkbox">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <div class="wrapper-line">
+                        <legend>agendando a próxima mentoria</legend>
+                        <div class="line"></div>
+                        <div class="wrapper-line-section">
+                            <div class="wrapper-line-div-agendamento">
+                                <section>
+                                    <label for="event-date">Data</label>
+                                    <input type="date" required>
+                                </section>
+                                <section>
+                                    <label for="event-time-begin">Das</label>
+                                    <input type="time" required>
+                                </section>
+                                <section>
+                                    <label for="event-time-end">Até</label>
+                                    <input type="time" required>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <footer>
+            <input type="submit" value="Salvar" id="button-form" form="form">
+        </footer>
+    </div>
+</body>
+</html>
